@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* mobile design */
+section{
+    background-color: #192a32;
+}
+header{
+    height: 10vh;
+}
+.x{
+    color: #32c2c1;
+    height: 3rem;
+    width: 3rem;
+    font-size: 100px;
+}
+.circle{
+    color: yellow;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.icon_button{
+    height: 2rem;
+    width: 1rem;
+}
+.turn_button{
+    background-color: #1f3540;
+    border: solid 1px #1f3540;
+    color: white;
+    letter-spacing: 1.5px;
+    margin-right: 6rem;
+    width: 20vw;
+    height: 6vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    &:hover{
+        background-color: #32c2c256;
+    }
+}
+.reload_button{
+    background-color: #a9beca;
+    border: solid 1px #a9beca;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 3rem;
+    height: 3rem;
+    &:hover{
+        background-color: rgba(172, 146, 112, 0.327);
+    }
+}
+.conteiner{
+    height: 60vh;
+}
+.squares_container{
+    height: 55vh;
+    margin-left: 2rem;
+}
+.squares{
+    height:12vh;
+    background-color: #1f3540;
+    border: solid 1px #1f3540;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    &:hover{
+        background-color: #32c2c256;
+    }
+}
+.square_x{
+    color: #32c2c1;
+    height: 4rem;
+}
