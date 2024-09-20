@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>win state</title>
+</head>
+
+<style>
+    .Modal {
+        background-color: #1f3540;
+        height: 40vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #627a84;
+    }
+    .takes_round{
+    color: #30c0bb;
+}
+.quit{
+    height: 40px;
+    width: 65px;
+    border: solid 1px #aabec9;
+    background-color: #aabec9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #192a32;
+    font-size: 0.8rem;
+}
+.next_round{
+    height: 40px;
+    width: 125px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+    background-color: #f2b237;
+    border: solid 1px #f2b237;
+    color: #192a32;
+    font-size: 0.8rem;
+}
+</style>
+
+<body>
+    <section
+        class="vw-100 vh-100 d-flex flex-column justify-content-center position-absolute top-0 start-0 modal_winner_container">
+        <div class="vw-100 d-flex flex-column Modal align-items-center ">
+            <h6 class="mt-5 fw-bold">YOU WON!</h6>
+            <div class="h-25 vw-100 ">
+                <h2 class="h-100 d-flex justify-content-center align-items-center takes_round fw-bolder">
+                    <span class="h-100">
+                        <img class="h-75 me-3 mt-2" src="./circle-svgrepo-com.svg" alt="">
+                    </span>
+                TAKES THE ROUND</h2>
+            </div>
+            <div class=" h-25 vw-100 mt-3 d-flex justify-content-center align-items-center">
+                <button class="me-3 quit fw-bold">QUIT</button>
+                <button class="next_round fw-bold">NEXT ROUND</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

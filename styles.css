@@ -4,7 +4,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* mobile design */
+/* game main design*/
 section{
     background-color: #192a32;
 }
@@ -15,12 +15,12 @@ header{
     color: #32c2c1;
     height: 3rem;
     width: 3rem;
-    font-size: 100px;
 }
 .circle{
-    color: yellow;
+    fill: #f2b236;
     height: 2.5rem;
     width: 2.5rem;
+
 }
 .icon_button{
     height: 2rem;
@@ -31,10 +31,9 @@ header{
     border: solid 1px #1f3540;
     color: white;
     letter-spacing: 1.5px;
-    margin-right: 6rem;
-    width: 20vw;
+    width: 18vw;
     height: 6vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     &:hover{
         background-color: #32c2c256;
     }
@@ -42,7 +41,7 @@ header{
 .reload_button{
     background-color: #a9beca;
     border: solid 1px #a9beca;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 3rem;
     height: 3rem;
     &:hover{
@@ -51,16 +50,22 @@ header{
 }
 .conteiner{
     height: 60vh;
+    max-width: 500px;
 }
-.squares_container{
+/* .squares_container{
     height: 55vh;
     margin-left: 2rem;
-}
-.squares{
-    height:12vh;
+    width: 40vw;
+    display: flex;
+    
+} */
+.squares,
+.squaress{
+    height:12vh; 
     background-color: #1f3540;
     border: solid 1px #1f3540;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-sizing: border-box;
     &:hover{
         background-color: #32c2c256;
     }
@@ -69,3 +74,168 @@ header{
     color: #32c2c1;
     height: 4rem;
 }
+footer{
+    height: 15vh;
+}
+footer > button{
+    height: 11vh;
+}
+.you, .ties, .CPU{
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.you{
+    border: solid 1px #0dcaf0;
+}
+.ties{
+    border: solid 1px #6c757d;
+}
+.CPU{
+    border: solid 1px #ffc107;
+}
+
+
+@media (min-width: 768px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
+        width: 50vw;
+    }
+    footer{
+        width: 50vw;
+    }
+   .squares_container{
+    justify-content: center !important;
+   }
+   .turn_button{
+    width: 8vw;
+   }
+}
+@media (max-width: 768px){
+    .conteiner{
+        width: 100vw;
+    }
+}
+/* menu main design */
+.header_menu {
+    height: 28vh;
+}
+
+.circle {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    &:focus,
+    &:hover {
+        fill: #384f59;
+    }
+
+
+} 
+
+.circle_player {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    &:focus,
+    &:hover {
+        fill: #384f59;
+    }
+}
+
+ .x {
+    color: #32c2c1;
+    height: 3rem;
+    width: 3rem;
+} 
+
+.x_player {
+    height: 3rem;
+    width: 3rem;
+    color: #aabec5;
+    color: yellow;
+
+    &:focus,
+    &:hover {
+        color: #384f59;
+
+    }
+}
+
+.rectangle {
+    width: 40vw;
+    height: 25vh;
+}
+
+.rectangle_menu {
+    height: 25vh;
+    background-color: #384f59; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.pick_player {
+
+    color: #aabec5;
+}
+
+.pick_icon {
+    height: 40%;
+    width: 90%;
+}
+
+.choose_player1,
+.choose_player2 {
+    border: solid 1px #1a2b33;
+    background-color: #1a2b33;
+
+    &:focus,
+    &:hover {
+        background-color: #aabec5;
+        color: #1a2b33;
+    }
+}
+
+.remember {
+    color: #aabec5;
+}
+
+.vs_cpu,
+.vs_player {
+    width: 30vw;
+    height: 10%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 16px;
+}
+
+.vs_cpu {
+    background-color: #f4b238;
+    border: solid 1px #f4b238;
+
+    &:hover {
+        background-color: white
+    }
+}
+
+.vs_player {
+    background-color: #30c3bd;
+    border: solid 1px #30c3bd;
+
+    &:hover {
+        background-color: #84c5c5;
+    }
+}
+
+@media (max-width:768px) {
+    .rectangle {
+        width: 75vw;
+    }
+
+    .vs_cpu,
+    .vs_player {
+        width: 60vw;
+    }
+}
+/* 

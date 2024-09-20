@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #1f3540;
+    }
+
+    .header_menu {
+        height: 28vh;
+    }
+
+    .circle {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        &:hover {
+            fill: #384f59;
+        }
+    }
+
+    .x {
+        color: #32c2c1;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .x_player {
+        height: 3rem;
+        width: 3rem;
+        color: #aabec5;
+
+        &:hover {
+            color: #384f59;
+
+        }
+    }
+
+    .rectangle {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .rectangle_menu {
+        height: 25vh;
+        background-color: #384f59;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .pick_player {
+
+        color: #aabec5;
+    }
+
+    .pick_icon {
+        height: 40%;
+        width: 90%;
+    }
+
+    .choose_player1,
+    .choose_player2 {
+        border: solid 1px #1a2b33;
+        background-color: #1a2b33;
+
+        &:hover {
+            background-color: #aabec5;
+            color: #1a2b33;
+        }
+    }
+
+    .remember {
+        color: #aabec5;
+    }
+
+    .vs_cpu,
+    .vs_player {
+        width: 30vw;
+        height: 10%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 16px;
+    }
+
+    .vs_cpu {
+        background-color: #f4b238;
+        border: solid 1px #f4b238;
+
+        &:hover {
+            background-color: white
+        }
+    }
+
+    .vs_player {
+        background-color: #30c3bd;
+        border: solid 1px #30c3bd;
+
+        &:hover {
+            background-color: #84c5c5;
+        }
+    }
+
+    @media (max-width:768px) {
+        .rectangle {
+            width: 75vw;
+        }
+
+        .vs_cpu,
+        .vs_player {
+            width: 60vw;
+        }
+    }
+</style>
+
+<body>
+   <main class="position-absolute start-0 top-0"></main>
+    <section class="h-100 w-100">
+        <div class="h-100 w-100">
+            <header class="vw-100 header_menu d-inline-flex justify-content-center align-items-end mb-3">
+                <img class=" circle mb-1" src="./circle-svgrepo-com.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 x ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </header>
+        </div>
+        <div class="rectangle d-flex fleex-column me-auto ms-auto rounded">
+            <div class="w-75 h-100   rectangle_menu me-auto ms-auto rounded d-flex flex-column align-items-center">
+                <span class="d-flex justify-content-center fw-bolder pick_player mt-3">
+                    <h6>PICK PLAYER 1'S MARK</h6>
+                </span>
+                <div class=" pick_icon rounded d-flex mt-3">
+                    <button class="w-50 h-100 rounded choose_player1 me-1"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-6 x_player ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <button class="w-50 h-100 rounded choose_player2">
+                        <svg class="circle" fill="#aabec5" height="800px" width="800px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330" xml:space="preserve">
+                            <path id="XMLID_520_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.982,0,165,0z M165,300
+                   C90.561,300,30,239.44,30,165S90.561,30,165,30c74.439,0,135,60.561,135,135S239.439,300,165,300z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <h6 class="fw-bold remember mt-3">REMEMBER: X GOES FIRST</h6>
+                </div>
+            </div>
+        </div>
+        <div class="vw-100 vh-100 mt-5">
+            <div class=" vh-100 vw-100 d-flex align-items-center flex-column">
+                <button class=" vs_cpu fw-bold mb-3">NEW GAME(VS CPU)</button>
+                <button class=" vs_player fw-bold">NEW GAME(VS PLAYER)</button>
+            </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
